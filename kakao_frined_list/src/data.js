@@ -11,8 +11,8 @@ export const myProfile = {
 export const friendProfiles = [
     {
       uri: "https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg",
-      name: "김민호",
-      introduction: "Minho Kim",
+      name: "처리",
+      introduction: "나는 촐! 민동 안뇽!❤️",
     },
     {
       uri: "https://cdn.pixabay.com/photo/2018/04/05/14/09/sunflowers-3292932__480.jpg",

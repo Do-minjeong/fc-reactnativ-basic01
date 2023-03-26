@@ -1,11 +1,12 @@
-import { View, Text, StyleSheet } from "react-native"
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native"
 import { Ionicons } from '@expo/vector-icons'; 
 
-const IconButton = (props) => {
+const IconButton = ({name, bgColor}) => {
     return (
-        <View style={{ paddingHorizontal: 6 }}>
-            <Ionicons name={props.name} size={34} color="black" />
-        </View>
+        /* hitSlop : 컴포넌트 외 터치 가능한 범위 지정 */
+        <TouchableOpacity hitSlop={{ top: 15, bottom: 15}} style={{ paddingHorizontal: 6, backgroundColor: bgColor }}>
+            <Ionicons name={name} size={34} color="black" />
+        </TouchableOpacity>
     );
 }
 
@@ -18,7 +19,7 @@ export default () => {
                 <IconButton name="search-outline" />
                 <IconButton name="person-add-outline" />
                 <IconButton name="md-musical-notes-outline" />
-                <IconButton name="ios-settings-outline"/>
+                <IconButton name="ios-settings-outline" />
             </View>
         </View>
     )
